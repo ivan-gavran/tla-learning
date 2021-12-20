@@ -1,0 +1,1 @@
+ check hello_world.tla

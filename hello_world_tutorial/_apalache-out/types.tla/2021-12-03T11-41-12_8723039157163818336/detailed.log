@@ -1,0 +1,12 @@
+11:41:12.159 [main] INFO  a.f.a.t.Tool$ - Type checking types.tla
+11:41:12.166 [main] INFO  a.f.a.i.p.PassChainExecutor - PASS #0: SanyParser
+11:41:12.282 [main] ERROR a.f.a.t.Tool$ - Error by TLA+ parser: *** Abort messages: 1
+
+Unknown location
+
+File name 'types' does not match the name 'hello_world' of the top level module it contains.
+
+
+
+11:41:12.286 [main] INFO  a.f.a.t.Tool$ - It took me 0 days  0 hours  0 min  0 sec
+11:41:12.288 [main] INFO  a.f.a.t.Tool$ - Total time: 0.668 sec

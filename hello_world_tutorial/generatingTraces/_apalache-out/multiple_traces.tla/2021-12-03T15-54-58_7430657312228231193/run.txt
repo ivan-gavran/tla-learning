@@ -1,0 +1,1 @@
+ check --inv=ImportantIntIs6 multiple_traces.tla

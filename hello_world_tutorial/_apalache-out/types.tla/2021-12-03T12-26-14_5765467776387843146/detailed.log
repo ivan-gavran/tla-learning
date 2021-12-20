@@ -1,0 +1,8 @@
+12:26:14.528 [main] INFO  a.f.a.t.Tool$ - Type checking types.tla
+12:26:14.536 [main] INFO  a.f.a.i.p.PassChainExecutor - PASS #0: SanyParser
+12:26:15.010 [main] DEBUG a.f.a.i.p.PassChainExecutor - PASS #0: SanyParser [OK]
+12:26:15.011 [main] INFO  a.f.a.i.p.PassChainExecutor - PASS #1: TypeCheckerSnowcat
+12:26:15.012 [main] INFO  a.f.a.t.t.p.EtcTypeCheckerPassImpl -  > Running Snowcat .::.
+12:26:15.117 [main] ERROR a.f.a.t.Tool$ - Typing input error: Expected a type annotation for VARIABLE bobs_inbox
+12:26:15.120 [main] INFO  a.f.a.t.Tool$ - It took me 0 days  0 hours  0 min  0 sec
+12:26:15.121 [main] INFO  a.f.a.t.Tool$ - Total time: 0.958 sec

@@ -1,0 +1,8 @@
+11:41:40.914 [main] INFO  a.f.a.t.Tool$ - Type checking types.tla
+11:41:40.921 [main] INFO  a.f.a.i.p.PassChainExecutor - PASS #0: SanyParser
+11:41:41.460 [main] DEBUG a.f.a.i.p.PassChainExecutor - PASS #0: SanyParser [OK]
+11:41:41.461 [main] INFO  a.f.a.i.p.PassChainExecutor - PASS #1: TypeCheckerSnowcat
+11:41:41.462 [main] INFO  a.f.a.t.t.p.EtcTypeCheckerPassImpl -  > Running Snowcat .::.
+11:41:41.579 [main] ERROR a.f.a.t.Tool$ - Typing input error: Unexpected annotation of bobs_mood: @type
+11:41:41.581 [main] INFO  a.f.a.t.Tool$ - It took me 0 days  0 hours  0 min  1 sec
+11:41:41.581 [main] INFO  a.f.a.t.Tool$ - Total time: 1.61 sec

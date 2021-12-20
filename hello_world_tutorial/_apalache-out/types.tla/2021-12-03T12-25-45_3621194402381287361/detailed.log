@@ -1,0 +1,13 @@
+12:25:45.347 [main] INFO  a.f.a.t.Tool$ - Type checking types.tla
+12:25:45.353 [main] INFO  a.f.a.i.p.PassChainExecutor - PASS #0: SanyParser
+12:25:45.859 [main] DEBUG a.f.a.i.p.PassChainExecutor - PASS #0: SanyParser [OK]
+12:25:45.860 [main] INFO  a.f.a.i.p.PassChainExecutor - PASS #1: TypeCheckerSnowcat
+12:25:45.861 [main] INFO  a.f.a.t.t.p.EtcTypeCheckerPassImpl -  > Running Snowcat .::.
+12:25:46.340 [main] INFO  a.f.a.t.t.p.EtcTypeCheckerPassImpl -  > Your types are great!
+12:25:46.341 [main] INFO  a.f.a.t.t.p.EtcTypeCheckerPassImpl -  > All expressions are typed
+12:25:46.342 [main] DEBUG a.f.a.i.p.PassChainExecutor - PASS #1: TypeCheckerSnowcat [OK]
+12:25:46.343 [main] INFO  a.f.a.i.p.PassChainExecutor - PASS #2: Terminal
+12:25:46.343 [main] DEBUG a.f.a.i.p.PassChainExecutor - PASS #2: Terminal [OK]
+12:25:46.344 [main] INFO  a.f.a.t.Tool$ - Type checker [OK]
+12:25:46.347 [main] INFO  a.f.a.t.Tool$ - It took me 0 days  0 hours  0 min  1 sec
+12:25:46.347 [main] INFO  a.f.a.t.Tool$ - Total time: 1.387 sec

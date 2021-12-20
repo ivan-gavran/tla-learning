@@ -1,0 +1,13 @@
+16:09:35.902 [main] INFO  a.f.a.t.Tool$ - Checker options: filename=multiple_traces.tla, init=, next=, inv=AlternatingOddEvenUntil10
+16:09:35.906 [main] INFO  a.f.a.t.Tool$ - Tuning: 
+16:09:35.911 [main] INFO  a.f.a.i.p.PassChainExecutor - PASS #0: SanyParser
+16:09:36.002 [main] ERROR a.f.a.t.Tool$ - Error by TLA+ parser: *** Abort messages: 1
+
+In module multiple_traces
+
+Could not parse module multiple_traces from file /Users/gavran/Documents/informal/tlaplusTutorial/hello_world_tutorial/generatingTraces/multiple_traces.tla
+
+
+
+16:09:36.005 [main] INFO  a.f.a.t.Tool$ - It took me 0 days  0 hours  0 min  0 sec
+16:09:36.006 [main] INFO  a.f.a.t.Tool$ - Total time: 0.565 sec

@@ -1,0 +1,27 @@
+@!@!@STARTMSG 2262:0 @!@!@
+Created by Apalache on Fri Dec 03 15:56:11 CET 2021
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2110:1 @!@!@
+Invariant is violated.
+@!@!@ENDMSG 2110 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ auxiliary_str = "foo"
+/\ important_int = 0
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <Next>
+/\ auxiliary_str = "foo"
+/\ important_int = 4
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <Next>
+/\ auxiliary_str = "foo"
+/\ important_int = 6
+
+@!@!@ENDMSG 2217 @!@!@

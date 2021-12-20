@@ -1,0 +1,795 @@
+{
+  "name": "ApalacheIR",
+  "version": "1.0",
+  "description": "https://apalache.informal.systems/docs/adr/005adr-json.html",
+  "modules": [
+    {
+      "kind": "TlaModule",
+      "name": "counterexample",
+      "declarations": [
+        {
+          "type": "Untyped",
+          "kind": "TlaOperDecl",
+          "name": "ConstInit",
+          "formalParams": [
+            
+          ],
+          "isRecursive": false,
+          "body": {
+            "type": "Untyped",
+            "kind": "ValEx",
+            "value": {
+              "kind": "TlaBool",
+              "value": true
+            }
+          }
+        },
+        {
+          "type": "Untyped",
+          "kind": "TlaOperDecl",
+          "name": "State0",
+          "formalParams": [
+            
+          ],
+          "isRecursive": false,
+          "body": {
+            "type": "Untyped",
+            "kind": "OperEx",
+            "oper": "AND",
+            "args": [
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "alices_outbox"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_inbox"
+                  },
+                  {
+                    "type": "Seq(Str)",
+                    "kind": "OperEx",
+                    "oper": "TUPLE",
+                    "args": [
+                      
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_mood"
+                  },
+                  {
+                    "type": "Str",
+                    "kind": "ValEx",
+                    "value": {
+                      "kind": "TlaStr",
+                      "value": "neutral"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "network"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "Untyped",
+          "kind": "TlaOperDecl",
+          "name": "State1",
+          "formalParams": [
+            
+          ],
+          "isRecursive": false,
+          "body": {
+            "type": "Untyped",
+            "kind": "OperEx",
+            "oper": "AND",
+            "args": [
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "alices_outbox"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "hello"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_inbox"
+                  },
+                  {
+                    "type": "Seq(Str)",
+                    "kind": "OperEx",
+                    "oper": "TUPLE",
+                    "args": [
+                      
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_mood"
+                  },
+                  {
+                    "type": "Str",
+                    "kind": "ValEx",
+                    "value": {
+                      "kind": "TlaStr",
+                      "value": "neutral"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "network"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "hello"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "Untyped",
+          "kind": "TlaOperDecl",
+          "name": "State2",
+          "formalParams": [
+            
+          ],
+          "isRecursive": false,
+          "body": {
+            "type": "Untyped",
+            "kind": "OperEx",
+            "oper": "AND",
+            "args": [
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "alices_outbox"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "hello"
+                        }
+                      },
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "world"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_inbox"
+                  },
+                  {
+                    "type": "Seq(Str)",
+                    "kind": "OperEx",
+                    "oper": "TUPLE",
+                    "args": [
+                      
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_mood"
+                  },
+                  {
+                    "type": "Str",
+                    "kind": "ValEx",
+                    "value": {
+                      "kind": "TlaStr",
+                      "value": "neutral"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "network"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "hello"
+                        }
+                      },
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "world"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "Untyped",
+          "kind": "TlaOperDecl",
+          "name": "State3",
+          "formalParams": [
+            
+          ],
+          "isRecursive": false,
+          "body": {
+            "type": "Untyped",
+            "kind": "OperEx",
+            "oper": "AND",
+            "args": [
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "alices_outbox"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "hello"
+                        }
+                      },
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "world"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_inbox"
+                  },
+                  {
+                    "type": "Seq(Str)",
+                    "kind": "OperEx",
+                    "oper": "TUPLE",
+                    "args": [
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "hello"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_mood"
+                  },
+                  {
+                    "type": "Str",
+                    "kind": "ValEx",
+                    "value": {
+                      "kind": "TlaStr",
+                      "value": "neutral"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "network"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "world"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "Untyped",
+          "kind": "TlaOperDecl",
+          "name": "State4",
+          "formalParams": [
+            
+          ],
+          "isRecursive": false,
+          "body": {
+            "type": "Untyped",
+            "kind": "OperEx",
+            "oper": "AND",
+            "args": [
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "alices_outbox"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "hello"
+                        }
+                      },
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "world"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_inbox"
+                  },
+                  {
+                    "type": "Seq(Str)",
+                    "kind": "OperEx",
+                    "oper": "TUPLE",
+                    "args": [
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "hello"
+                        }
+                      },
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "world"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_mood"
+                  },
+                  {
+                    "type": "Str",
+                    "kind": "ValEx",
+                    "value": {
+                      "kind": "TlaStr",
+                      "value": "neutral"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "network"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "Untyped",
+          "kind": "TlaOperDecl",
+          "name": "State5",
+          "formalParams": [
+            
+          ],
+          "isRecursive": false,
+          "body": {
+            "type": "Untyped",
+            "kind": "OperEx",
+            "oper": "AND",
+            "args": [
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "alices_outbox"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "hello"
+                        }
+                      },
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "world"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_inbox"
+                  },
+                  {
+                    "type": "Seq(Str)",
+                    "kind": "OperEx",
+                    "oper": "TUPLE",
+                    "args": [
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "hello"
+                        }
+                      },
+                      {
+                        "type": "Str",
+                        "kind": "ValEx",
+                        "value": {
+                          "kind": "TlaStr",
+                          "value": "world"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "bobs_mood"
+                  },
+                  {
+                    "type": "Str",
+                    "kind": "ValEx",
+                    "value": {
+                      "kind": "TlaStr",
+                      "value": "happy"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "Untyped",
+                "kind": "OperEx",
+                "oper": "EQ",
+                "args": [
+                  {
+                    "type": "Untyped",
+                    "kind": "NameEx",
+                    "name": "network"
+                  },
+                  {
+                    "type": "Set(Str)",
+                    "kind": "OperEx",
+                    "oper": "SET_ENUM",
+                    "args": [
+                      
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "Untyped",
+          "kind": "TlaOperDecl",
+          "name": "InvariantViolation",
+          "formalParams": [
+            
+          ],
+          "isRecursive": false,
+          "body": {
+            "type": "Bool",
+            "kind": "LetInEx",
+            "body": {
+              "type": "Bool",
+              "kind": "OperEx",
+              "oper": "OPER_APP",
+              "args": [
+                {
+                  "type": "(() => Bool)",
+                  "kind": "NameEx",
+                  "name": "BobIsHappy$2$_skolem"
+                }
+              ]
+            },
+            "decls": [
+              {
+                "type": "(() => Bool)",
+                "kind": "TlaOperDecl",
+                "name": "BobIsHappy$2$_skolem",
+                "formalParams": [
+                  
+                ],
+                "isRecursive": false,
+                "body": {
+                  "type": "Bool",
+                  "kind": "OperEx",
+                  "oper": "EQ",
+                  "args": [
+                    {
+                      "type": "Str",
+                      "kind": "NameEx",
+                      "name": "bobs_mood"
+                    },
+                    {
+                      "type": "Str",
+                      "kind": "ValEx",
+                      "value": {
+                        "kind": "TlaStr",
+                        "value": "happy"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

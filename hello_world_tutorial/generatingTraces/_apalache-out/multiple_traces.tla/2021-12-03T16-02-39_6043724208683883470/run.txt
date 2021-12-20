@@ -1,0 +1,1 @@
+ check --inv=ImportantIntIsOddUntil6 --view=View multiple_traces.tla
