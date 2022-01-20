@@ -1,1 +1,0 @@
- check ../../modelator/jekyll/docs/tla_basics_tutorials/models/hello_world_typed/hello_world_typed.tla

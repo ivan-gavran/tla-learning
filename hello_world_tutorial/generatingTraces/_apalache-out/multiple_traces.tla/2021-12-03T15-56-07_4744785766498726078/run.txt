@@ -1,1 +1,0 @@
- check --inv=ImportantIntIs6 --view=View --max-error=3 multiple_traces.tla

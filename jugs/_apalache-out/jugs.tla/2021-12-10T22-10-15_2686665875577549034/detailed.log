@@ -1,9 +1,0 @@
-22:10:15.805 [main] INFO  a.f.a.t.Tool$ - Checker options: filename=jugs.tla, init=, next=, inv=
-22:10:15.812 [main] INFO  a.f.a.t.Tool$ - Tuning: 
-22:10:15.819 [main] INFO  a.f.a.i.p.PassChainExecutor - PASS #0: SanyParser
-22:10:16.326 [main] DEBUG a.f.a.i.p.PassChainExecutor - PASS #0: SanyParser [OK]
-22:10:16.327 [main] INFO  a.f.a.i.p.PassChainExecutor - PASS #1: TypeCheckerSnowcat
-22:10:16.327 [main] INFO  a.f.a.t.t.p.EtcTypeCheckerPassImpl -  > Running Snowcat .::.
-22:10:16.375 [main] ERROR a.f.a.t.Tool$ - Typing input error: Unexpected annotation of three_jug: @type
-22:10:16.379 [main] INFO  a.f.a.t.Tool$ - It took me 0 days  0 hours  0 min  1 sec
-22:10:16.379 [main] INFO  a.f.a.t.Tool$ - Total time: 1.182 sec

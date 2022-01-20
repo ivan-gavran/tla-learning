@@ -1,1 +1,0 @@
- check --inv=ImportantIntIsOddUntil16 --view=View --max-error=10 multiple_traces.tla
