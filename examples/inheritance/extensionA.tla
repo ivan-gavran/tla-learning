@@ -6,15 +6,17 @@ VARIABLES
     \* @type: Int;
     x
 
-CONSTANTS 
-    IsXGoodExtended(_)
 
+\* @type: (Int) => Bool;
+CheckOrig(a) ==
+    a < 4
 
-INSTANCE base WITH IsXGood <- IsXGoodExtended
+GOAL == 
+    x < 5
 
-
-IsXGoodExtendedImpl(a) == 
-    a = 2
-
+BASE == INSTANCE base
+Next ==
+    x' = IF BASE!Check(x, CheckOrig) THEN x + 1 ELSE x
+Init == BASE!Init
 
 ====
