@@ -1,25 +1,30 @@
 ---- MODULE base ----
 
-EXTENDS Integers
+EXTENDS Integers, extensionA, extensionB
 VARIABLES 
     \* @type: Int;
     x
 
+CONSTANT 
+    \* @type: Str;
+    extension_type
 
-\* @type: (Int) => Bool;
-FF(a) == TRUE
 
-\* @type: ( Int, (Int) => Bool ) => Bool;
-Check(a, func(_)) == func(a)
+Check(a) ==
+    IF extension_type = "A"
+    THEN CheckA(a)
+    ELSE CheckB(a)
+    
+
 
 
 
 Next ==
-    x' = IF Check(x, FF) THEN x + 1 ELSE x
+    x' = IF Check(x) THEN x + 1 ELSE x
 
 Init ==
     x = 2
 
 GOAL == 
-    x < 3
+    x < 6
 ====
